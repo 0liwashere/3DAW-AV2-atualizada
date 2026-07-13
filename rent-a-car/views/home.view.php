@@ -11,7 +11,6 @@
 
 <?php include __DIR__ . '/partials/header.php'; ?>
 
-<!-- Barra de busca -->
 <form class="busca-barra" action="carros.php" method="GET">
     <div class="busca-campo" style="flex:2;">
         <label for="local_retirada">Retirar o carro em</label>
@@ -34,7 +33,6 @@
     <button type="submit" class="btn-primario">Pesquisar</button>
 </form>
 
-<!-- Banner promocional -->
 <div class="banner-carrossel" id="bannerCarrossel">
     <button type="button" class="carrossel-seta esquerda">&#10094;</button>
 
@@ -71,7 +69,6 @@
     <button type="button" class="carrossel-seta direita">&#10095;</button>
 </div>
 
-<!-- Texto institucional -->
 <section class="secao-institucional">
     <h2>Descubra o Encanto do Rio de Janeiro</h2>
     <p>
@@ -84,7 +81,6 @@
     </p>
 </section>
 
-<!-- Carrossel de pontos turísticos -->
 <div class="turismo-carrossel" id="turismoCarrossel">
     <button type="button" class="carrossel-seta esquerda">&#10094;</button>
 
@@ -105,7 +101,6 @@
 </div>
 <p class="turismo-legenda" id="turismoLegenda">PRAIA DE COPACABANA</p>
 
-<!-- Lista de Lojas -->
 <div class="lojas-lista">
     <?php foreach ($lojas as $loja): ?>
         <div class="loja-item">
@@ -119,7 +114,7 @@
 
 <script src="assets/js/home.js"></script>
 <script>
-    // Atualiza a legenda do carrossel de turismo conforme o slide ativo
+
     document.addEventListener('DOMContentLoaded', function () {
         const carrossel = document.getElementById('turismoCarrossel');
         const legenda = document.getElementById('turismoLegenda');
