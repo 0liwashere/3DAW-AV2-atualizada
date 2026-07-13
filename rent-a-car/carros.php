@@ -14,7 +14,7 @@ $f_cor         = $_GET['cor'] ?? [];
 $busca         = trim($_GET['busca'] ?? '');
 $ordenar       = $_GET['ordenar'] ?? '';
 
-// --- Monta a query dinamicamente ---
+
 $where = ['ativo = 1'];
 $params = [];
 
@@ -82,7 +82,7 @@ $stmt = $pdo->prepare($sql);
 $stmt->execute($params);
 $carros = $stmt->fetchAll();
 
-// Categorias existentes no banco (pra montar os checkboxes dinamicamente)
+
 $categoriasDisponiveis = $pdo->query('SELECT DISTINCT categoria FROM carros ORDER BY categoria')->fetchAll(PDO::FETCH_COLUMN);
 $coresDisponiveis = $pdo->query('SELECT DISTINCT cor FROM carros ORDER BY cor')->fetchAll(PDO::FETCH_COLUMN);
 
