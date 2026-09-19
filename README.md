@@ -3,7 +3,7 @@
 Sistema web de aluguel de carros, desenvolvido como projeto acadêmico da disciplina de Desenvolvimento de Aplicações WEB. A aplicação cobre toda a jornada do usuário: cadastro, busca de veículos com filtros, reserva com cálculo dinâmico de preço, aplicação de cupons e confirmação de pagamento.
 
 ![Preview do projeto](imagens/home.jpg)
-<!-- Substitua pelo caminho de um print ou GIF navegando pela aplicação -->
+
 
 ## Funcionalidades
 
